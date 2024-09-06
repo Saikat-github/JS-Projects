@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(0, 0, 33);
+    color: white;
+}
+
+
+/* nav section */
+header {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(21, 21, 61);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* height: 80px; */
+    padding: 1rem 2rem;
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.secondUl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.right .hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+
+.left {
+    font-size: 1.5rem;
+}
+
+
+/* first section */
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px 60px;
+}
+
+/* .firstSection>div {
+    width: 30%;
+} */
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.purple {
+    color: purple;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+ 
+nav ul a:hover {
+    opacity: 1;
+}
+
+#element {
+    color: purple;
+}
+
+
+
+/* second section */
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    
+}
+
+main hr {
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.secondSection h1 {
+    font-size: 2rem;
+}
+
+.text-gray {
+    color: gray;
+}
+
+/* second section */
+.secondSection .box {
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+}
+
+
+.image-top {
+    width: 2rem;
+    position: relative;
+    top: -40px;
+    left: -9px;
+}
+.vertical-title {
+    position: relative;
+    top: 75px;
+    left: -9px;
+    width: 150px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    left: -9px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+}
+
+/* footer */
+
+footer {
+    width: 100vw;
+    background-color: #e900954f;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 230px;
+    padding: 20px 130px;
+}
+
+.footer-second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-second ul {
+    list-style: none;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    opacity: 0.85;
+}
+
+.footer-second ul li {
+    cursor: pointer;
+}
+.footer-second ul li:hover {
+    text-decoration: underline;
+}
+.footer-text {
+    font-size: 14px;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* buttons */
+.leftSection .btn {
+    padding: 12px;
+    font-size: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.911);
+    color: rgb(10, 10, 78);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.btns > .btn {
+    margin-right: 0.6rem;
+}
+
+
+
+.leftSection .btn:hover {
+    color: white;
+    background-color: purple;
+}
+
+/* media query */
+
+@media screen and (max-width: 821px) {
+
+    .right .hamburger {
+        display: inline;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .firstSection {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin: 120px 0;
+    }
+
+    .leftSection {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftSection {
+        font-size: 2.5rem;
+    }
+
+    .leftSection .btn {
+        padding: 10px;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .secondSection {
+        margin: 100px 100px 700px 100px;
+    }
+
+    .secondSection .box {
+        background-color: white;
+        height: 1000px;
+        width: 2px;
+        margin: 100px 0;
+        display: flex;
+        align-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .secondSection .vertical {
+        width: 40px;
+        height: 1px;
+        background-color: white;
+    }
+
+    .image-top {
+        width: 2rem;
+        position: relative;
+        top: -15px;
+        left: -35px;
+    }
+    .vertical-title {
+        position: relative;
+        top: -65px;
+        left: 58px;
+        width: 150px;
+    }
+    
+    .vertical-desc {
+        top: -61px;
+        left: 58px;
+    }
+
+
+    .footer {
+        height: 10vh;
+        padding: 10px;
+    }
+    .footer-second {
+        display: none;
+    }
+
+    .footer-text, .footer-first {
+        font-size: 10px;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    body {
+        min-width: fit-content;
+    }
+}
